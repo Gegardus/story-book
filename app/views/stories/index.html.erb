@@ -1,3 +1,8 @@
+<!-- 
+The first argument of the turbo_frame_tag helper is a unique id 
+Turbo expects a frame with the same id on the target page (new), 
+whenever a link within a TurboFrame is clicked
+-->
 <%= turbo_frame_tag "create_story_form" do %>
   <%= link_to 'Create new story', new_story_path, class: 'btn btn-dark', data: { turbo_frame: 'create_story_form' } %>
 <% end %>
