@@ -1,3 +1,8 @@
+<!-- 
+The first argument of the turbo_frame_tag helper is a unique id 
+Turbo expects a frame with the same id on the target page (edit), 
+whenever a link within a TurboFrame is clicked
+-->
 <%= turbo_frame_tag "story_#{story.id}" do %>
   <div style='border-style: ridge; padding: 20px;', class='mt-2'>
     <b><%= story.title %></b><br>

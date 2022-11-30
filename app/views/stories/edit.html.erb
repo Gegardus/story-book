@@ -1,5 +1,5 @@
 <h2>Edit Story</h2>
-    
+<!-- Add turbo_frame_tag to the target form (from story partial) -->    
 <%= turbo_frame_tag "story_#{@story.id}" do %>
   <%= render partial: 'form', object: @story %>
 <% end %>
