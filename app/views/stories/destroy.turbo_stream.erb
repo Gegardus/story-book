@@ -1,1 +1,6 @@
+<!-- 
+send a response 
+By doing this, a particular story will be removed from 
+the card div section without having to refresh the website.
+ -->
 <%= turbo_stream.remove "story_#{@story.id}" %>

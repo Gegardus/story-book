@@ -4,6 +4,13 @@
 
 <h2 class='mt-3'>Stories</h2>
 
+<!--
+In order to prevent updates from being lost in space, 
+the channel name given to turbo_stream_from and broadcast action must match. 
+In this case, the channel name is “stories”.
+actions like append, prepend, remove, etc. can also be used with broadcast. 
+On the index page, it will prepend the newly created story.
+-->
 <%= turbo_stream_from 'stories' %>
 <%= turbo_frame_tag "stories" do %>
   <% if @stories.any? %>
